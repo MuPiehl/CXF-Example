@@ -21,7 +21,7 @@ public class HelloPortImpl{ //implements HelloPort {
     @WebMethod(operationName = "mpiOperation")
     public @WebResult(name = "mpiResult") SayHelloResponse sayHelloOperation(@WebParam(name = "mpiRequest") SayHello sayHello, @WebParam(name = "partnerId")String text) {
         SayHelloResponse hello = new SayHelloResponse();
-        hello.setGreeting("Howdy! " + text);
+        hello.setGreeting("Howdy!! " + text);
         hello.setRequest(sayHello);
         return hello;
     }
